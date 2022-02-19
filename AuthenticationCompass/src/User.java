@@ -18,6 +18,18 @@ public class User{
 		return false;
 	}
 	
+	public void verifyHour(int hour) {
+		if(hour >= 0 && hour < 6) {
+			System.out.println("Boa madrugada, você se logou ao nosso sistema.");
+		}else if(hour >= 6 && hour < 12) {
+			System.out.println("Bom dia, você se logou ao nosso sistema.");
+		}else if(hour >= 12 && hour < 18) {
+			System.out.println("Boa tarde, você se logou ao nosso sistema.");
+		}else if(hour >= 18 && hour < 24) {
+			System.out.println("Boa noite, você se logou ao nosso sistema.");
+		}
+	}
+	
 }
 
 
